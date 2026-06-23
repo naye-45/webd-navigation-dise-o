@@ -20,9 +20,10 @@ header{
 background:#0d47a1;
 color:white;
 padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 30px;
 }
 
 h1{
@@ -33,6 +34,7 @@ nav ul{
 display:flex;
 list-style:none;
 gap:20px;
+justify-content: center;
 }
 
 nav a{
