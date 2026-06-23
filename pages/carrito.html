@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito | Mapa de navegación</title>
-  <link rel="stylesheet" href="../styles/main.css">
+<meta charset="UTF-8">
+<title>Carrito</title>
+<link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-  <main class="site">
-    <header class="hero">
-      <p class="eyebrow">Sección separada</p>
-      <h1>Carrito</h1>
-      <p class="lead">Esta rama separa la revisión de artículos del cierre del proceso de compra.</p>
-    </header>
 
-    <section class="page-shell">
-      <aside class="panel sidebar-panel">
-        <h2>Ruta</h2>
-        <ul class="tree">
-          <li>
-            <a class="node" href="../index.html">Inicio</a>
-            <ul>
-              <li><span class="node node-root">Carrito</span></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="back-link" href="../index.html">Volver al inicio</a>
-      </aside>
+<header>
+<h1>BlueStyle</h1>
 
-      <section class="panel page-content" aria-label="Contenido del carrito">
-        <p class="breadcrumb">Inicio / Carrito</p>
-        <h2>Proceso de compra</h2>
-        <p>Separar estas dos vistas permite explicar la navegación entre revisión de pedido y confirmación.</p>
+<nav>
+<ul>
+<a class="node" href="index.html">Inicio</a>
+<li><a href="catalogo-hombre.html">Hombre</a></li>
+<li><a href="catalogo-mujer.html">Mujer</a></li>
+<li><a href="carrito.html">Carrito</a></li>
+<li><a href="perfil.html">Perfil</a></li>
+<li><a href="historial.html">Pedidos</a></li>
+</ul>
+</nav>
+</header>
 
-        <div class="branch-grid">
-          <articlhref="pages/productos.html"e class="card" id="resumen">
-            <h3>Resumen</h3>
-            <p>Reúne los productos seleccionados, cantidades y total estimado antes de pagar.</p>
-          </article>
-          <article class="card" id="checkout">
-            <h3>Checkout</h3>
-            <p>Contiene el formulario de envío, facturación y confirmación final de la compra.</p>
-          </article>
-        </div>
-      </section>
-    </section>
-  </main>
+<section class="carrito">
+
+<h2>Mi Carrito</h2>
+
+<p>Camisa Casual - $29.99</p>
+<p>Blusa Elegante - $34.99</p>
+
+<h3>Total: $64.98</h3>
+
+<button class="btn-primary">
+Finalizar Compra
+</button>
+
+</section>
+
 </body>
 </html>

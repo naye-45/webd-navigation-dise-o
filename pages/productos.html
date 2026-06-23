@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos | Mapa de navegación</title>
-  <link rel="stylesheet" href="../styles/main.css">
+<meta charset="UTF-8">
+<title>Detalle del Producto</title>
+<link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-  <main class="site">
-    <header class="hero">
-      <p class="eyebrow">Sección separada</p>
-      <h1>Productos</h1>
-      <p class="lead">Esta página agrupa la navegación del catálogo en dos responsabilidades: categorías y detalle de producto.</p>
-    </header>
 
-    <section class="page-shell">
-      <aside class="panel sidebar-panel">
-        <h2>Ruta</h2>
-        <ul class="tree">
-          <li>
-            <a class="node" href="../index.html">Inicio</a>
-            <ul>
-              <li><span class="node node-root">Productos</span></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="back-link" href="../index.html">Volver al inicio</a>
-      </aside>
+<header>
+<h1>BlueStyle</h1>
 
-      <section class="panel page-content" aria-label="Contenido de productos">
-        <p class="breadcrumb">Inicio / Productos</p>
-        <h2>Contenido del catálogo</h2>
-        <p>Las subpáginas del catálogo se mantienen separadas para que cada bloque tenga una función clara.</p>
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="catalogo-hombre.html">Hombre</a></li>
+<li><a href="catalogo-mujer.html">Mujer</a></li>
+<li><a href="carrito.html">Carrito</a></li>
+<li><a href="perfil.html">Perfil</a></li>
+<li><a href="historial.html">Pedidos</a></li>
+</ul>
+</nav>
+</header>
 
-        <div class="branch-grid">
-          <article class="card" id="categorias">
-            <h3>Categorías</h3>
-            <p>Organiza los productos por tipo, colección o uso. Es la puerta de entrada al catálogo.</p>
-          </article>
-          <article class="card" id="detalle-producto">
-            <h3>Detalle de Producto</h3>
-            <p>Presenta la ficha individual con información específica, precio y acciones de compra.</p>
-          </article>
-        </div>
-      </section>
-    </section>
-  </main>
+<section class="detalle">
+
+<img src="img/camisa-hombre.jpg">
+
+<div>
+<h2>Camisa Casual Premium</h2>
+<p>Color Azul Marino</p>
+<p>Tallas S, M, L, XL</p>
+<h3>$29.99</h3>
+
+<button class="btn-primary">
+Agregar al Carrito
+</button>
+
+</div>
+
+</section>
+
 </body>
 </html>
