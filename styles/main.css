@@ -33,15 +33,17 @@ font-family:'Montserrat',sans-serif;
 nav ul{
 display:flex;
 list-style:none;
-gap:20px;
+gap:40px;
 justify-content: center;
+width: 800px;
 }
 
 nav a{
 text-decoration:none;
 color:white;
-font-weight:500;
+font-weight:400;
 transition:.3s;
+font-size: 20px;
 }
 
 nav a:hover{
@@ -60,10 +62,10 @@ object-fit:cover;
 
 .hero-text{
 position:absolute;
-top:50%;
-left:10%;
-transform:translateY(-50%);
-color:white;
+top: 150px;
+left:15%;
+transform:translateY(-25%);
+color:black;
 }
 
 .hero-text h2{
@@ -73,12 +75,13 @@ font-size:3rem;
 .btn-primary{
 background:#1565c0;
 color:white;
-padding:12px 25px;
+padding:25px 40px;
 border:none;
 border-radius:8px;
 text-decoration:none;
 display:inline-block;
-margin-top:10px;
+margin-top:25px;
+font-size: 20px;
 }
 
 .btn-primary:hover{
@@ -118,8 +121,10 @@ object-fit:cover;
 
 .detalle{
 display:flex;
-gap:40px;
+gap:60px;
 padding:50px;
+font-size: 20px;
+line-height: 2.8;
 }
 
 .detalle img{
@@ -175,4 +180,216 @@ margin-top:auto;
 .categoria-card h3{
     padding:15px;
     color:#0d47a1;
+}
+/* ===== CARRITO ===== */
+
+.carrito h2{
+  margin-bottom:30px;
+  color:#0d47a1;
+}
+
+.lista-carrito{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 260px));
+  gap:25px;
+  justify-content:center;
+}
+
+.item-carrito{
+  background:white;
+  border-radius:15px;
+  box-shadow:0 3px 12px rgba(0,0,0,.1);
+  padding:20px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+.item-imagen{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.item-info{
+  width:100%;
+}
+
+.item-nombre{
+  font-weight:600;
+  color:#0d47a1;
+}
+
+.item-precio{
+  color:#555;
+  font-size:.9rem;
+}
+
+.item-cantidad{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:.9rem;
+}
+
+.item-cantidad input{
+  width:60px;
+  padding:5px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  text-align:center;
+}
+
+.item-subtotal{
+  font-weight:600;
+  color:#1565c0;
+}
+
+.btn-eliminar{
+  background:none;
+  border:1px solid #e53935;
+  color:#e53935;
+  padding:6px 16px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:.85rem;
+  transition:.3s;
+}
+
+.btn-eliminar:hover{
+  background:#e53935;
+  color:white;
+}
+
+.carrito-vacio{
+  text-align:center;
+  font-size:1.1rem;
+  color:#555;
+  padding:40px 0;
+}
+
+.carrito-vacio a{
+  color:#1565c0;
+  font-weight:600;
+}
+
+
+
+.resumen-carrito{
+  max-width:320px;
+  margin:40px auto 0;
+  background:white;
+  border-radius:15px;
+  box-shadow:0 3px 12px rgba(0,0,0,.1);
+  padding:25px;
+  text-align:center;
+}
+
+.resumen-carrito h3{
+  color:#0d47a1;
+  margin-bottom:15px;
+}
+/* ===== PERFIL ===== */
+
+.perfil h2{
+  margin-bottom:30px;
+  color:#0d47a1;
+}
+
+.perfil-card{
+  background:white;
+  border-radius:15px;
+  box-shadow:0 3px 12px rgba(0,0,0,.1);
+  padding:30px;
+  display:flex;
+  align-items:center;
+  gap:30px;
+  max-width:500px;
+}
+
+.perfil-avatar{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+.perfil-datos p{
+  margin-bottom:8px;
+  color:#333;
+}
+
+.perfil-datos span{
+  font-weight:600;
+  color:#0d47a1;
+  margin-right:5px;
+}
+
+/* ----- Pedidos recientes ----- */
+
+.perfil-pedidos{
+  margin-top:40px;
+  max-width:600px;
+}
+
+.perfil-pedidos h3{
+  color:#0d47a1;
+  margin-bottom:15px;
+}
+
+.lista-pedidos{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:20px;
+}
+
+.pedido-item{
+  background:white;
+  border-radius:10px;
+  box-shadow:0 3px 10px rgba(0,0,0,.08);
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.pedido-id{
+  font-weight:600;
+  color:#0d47a1;
+}
+
+.pedido-fecha{
+  color:#777;
+  font-size:.9rem;
+}
+
+.pedido-estado{
+  font-size:.8rem;
+  font-weight:600;
+  padding:4px 12px;
+  border-radius:20px;
+}
+
+.pedido-entregado{
+  background:#e0f2e9;
+  color:#2e7d32;
+}
+
+.pedido-proceso{
+  background:#fff3e0;
+  color:#ef6c00;
+}
+
+.pedido-total{
+  font-weight:600;
+  color:#1565c0;
 }

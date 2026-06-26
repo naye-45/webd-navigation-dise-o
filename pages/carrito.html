@@ -12,7 +12,7 @@
 
 <nav>
 <ul>
-<a href="../index.html">Inicio</a>
+<li><a href="../index.html">Inicio</a></li>
 <li><a href="catalogo-hombre.html">Hombre</a></li>
 <li><a href="catalogo-mujer.html">Mujer</a></li>
 <li><a href="carrito.html">Carrito</a></li>
@@ -26,14 +26,50 @@
 
 <h2>Mi Carrito</h2>
 
-<p>Camisa Casual - $29.99</p>
-<p>Blusa Elegante - $34.99</p>
+<ul class="lista-carrito">
 
-<h3>Total: $64.98</h3>
+  <li class="item-carrito">
+    <img src="https://img.kwcdn.com/product/fancy/25ab6c60-0643-45d9-ac51-4ca420c87229.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Camisa Casual" class="item-imagen">
+    <div class="item-info">
+      <p class="item-nombre">Camisa Casual</p>
+      <p class="item-precio">$29.99</p>
+    </div>
+    <div class="item-cantidad">
+      <label for="cantidad-1">Cantidad:</label>
+      <input type="number" id="cantidad-1" name="cantidad-1" value="1" min="1">
+    </div>
+    <p class="item-subtotal">$29.99</p>
+    <button type="button" class="btn-eliminar" aria-label="Eliminar Camisa Casual del carrito">Eliminar</button>
+  </li>
 
-<button class="btn-primary">
-Finalizar Compra
-</button>
+  <li class="item-carrito">
+    <img src="https://i.pinimg.com/236x/8c/74/e1/8c74e11507e298aabb21cbd25f7d697c.jpg" alt="Blusa Elegante" class="item-imagen">
+    <div class="item-info">
+      <p class="item-nombre">Blusa Elegante</p>
+      <p class="item-precio">$34.99</p>
+    </div>
+    <div class="item-cantidad">
+      <label for="cantidad-2">Cantidad:</label>
+      <input type="number" id="cantidad-2" name="cantidad-2" value="1" min="1">
+    </div>
+    <p class="item-subtotal">$34.99</p>
+    <button type="button" class="btn-eliminar" aria-label="Eliminar Blusa Elegante del carrito">Eliminar</button>
+  </li>
+
+</ul>
+
+<!--
+  Si el carrito queda vacío, reemplaza la lista <ul class="lista-carrito"> por esto:
+
+  <p class="carrito-vacio">Tu carrito está vacío. <a href="catalogo-mujer.html">Ir al catálogo</a></p>
+-->
+
+<div class="resumen-carrito">
+  <h3>Total: $64.98</h3>
+  <button type="button" class="btn-primary">
+    Finalizar Compra
+  </button>
+</div>
 
 </section>
 
